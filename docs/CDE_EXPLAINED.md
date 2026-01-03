@@ -1,5 +1,7 @@
 # Context-Driven Engineering (CDE)
 
+This document elaborates on the mental model behind Context-Driven Engineering. Read **CDE.md** first for the concise definition.
+
 ## Why Context-Driven Engineering Exists
 
 Most software engineering problems are not caused by bad code.
