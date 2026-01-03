@@ -27,6 +27,11 @@ CDE addresses this by asserting that:
 
 CDE shifts effort from writing code to **designing intent**.
 
+Without explicit, coherent context, AI accelerates design drift rather than preventing it.
+Faster code generation amplifies ambiguity, inconsistency, and misplaced responsibility.
+
+CDE exists to make intent durable in a world where code is cheap.
+
 ---
 
 ## What This Repository Contains
