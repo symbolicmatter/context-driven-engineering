@@ -124,20 +124,22 @@ At these points:
 
 ## Core Documents
 
-CDE uses a small ecosystem of interrelated documents. Not all projects require all documents, but each document that exists must be maintained deliberately.
+CDE uses a small ecosystem of interrelated documents. Not all projects require all documents, but any document that exists must be maintained deliberately and kept internally consistent.
 
-| Document                | Purpose                                      | Audience             | Update Frequency |
-| ----------------------- | -------------------------------------------- | -------------------- | ---------------- |
-| **VISION.md**           | Long-term intent and direction (why)         | All stakeholders     | Rare             |
-| **PRODUCT.md**          | Problem, users, scope, non-goals             | All contributors     | Rare             |
-| **ARCHITECTURE.md**     | Structural and technical constraints (how)   | Developers           | Moderate         |
-| **SPEC.md** (or specs/) | Behavioral contracts (what)                  | Developers, QA, AI   | Frequent         |
-| **PLAN.md**             | Sequencing, milestones, and intent over time | Developers, AI       | Frequent         |
-| **UX_GUIDELINES.md**    | Interaction semantics and patterns           | Designers, Devs, AI  | Moderate         |
-| **CONTRIBUTING.md**     | Workflow, conventions, contribution rules    | All contributors     | Moderate         |
-| **AGENTS.md**           | Operating rules for AI agents                | AI agents, reviewers | Moderate         |
+| Document                | Purpose                                    | Audience                         | Update Frequency |
+| ----------------------- | ------------------------------------------ | -------------------------------- | ---------------- |
+| **VISION.md**           | Long-term intent and direction (why)       | All stakeholders                 | Rare             |
+| **PRODUCT.md**          | Problem, users, scope, non-goals           | All contributors                 | Rare             |
+| **DOMAIN.md**           | Domain language, concepts, invariants      | All stakeholders, developers, AI | Rare             |
+| **ARCHITECTURE.md**     | Structural and technical constraints (how) | Developers                       | Moderate         |
+| **CONTEXT.md**          | Constraints and assumptions                | Developers, architects, AI       | Moderate         |
+| **SPEC.md** (or specs/) | Behavioral contracts (what)                | Developers, QA, AI               | Frequent         |
+| **PLAN.md**             | Sequencing and intent over time            | Developers, AI                   | Frequent         |
+| **UX_GUIDELINES.md**    | Interaction semantics and patterns         | Designers, developers, AI        | Moderate         |
+| **CONTRIBUTING.md**     | Workflow, conventions, contribution rules  | All contributors                 | Moderate         |
+| **AGENTS.md**           | Operating rules for AI agents              | AI agents, reviewers             | Moderate         |
 
-Documents reference each other, but do not duplicate content.
+Documents reference each other, but do not duplicate content. Terminology and domain meaning are owned by DOMAIN.md.
 
 **Note on PLAN.md**
 
@@ -178,7 +180,7 @@ Before work is considered complete at a commitment point, the following must hol
 
 * Every implemented feature has a corresponding specification
 * Specifications reference relevant architectural elements
-* Terminology is consistent across documents
+* Terminology matches DOMAIN.md
 * Behavioral changes are noted, even briefly
 
 This gate is intentionally lightweight, but non-optional.
