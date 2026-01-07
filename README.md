@@ -34,6 +34,42 @@ CDE exists to make intent durable in a world where code is cheap.
 
 ---
 
+## _Isn’t this just a lot of upfront specification?_
+
+A common concern when first encountering Context-Driven Engineering is that it appears to require a large amount of upfront specification before any code can be written — similar to traditional outsourcing or forms of “big design up front”.
+
+That is **not** the intent.
+
+CDE does not aim to fully specify a system before development starts. Instead, it makes **design intent explicit at the moment it becomes relevant**, rather than leaving it implicit in code, conventions, or individual developer judgment.
+
+A few important clarifications:
+
+- **Specifications are iterative**, not final contracts.  
+    They can start as hypotheses and evolve alongside the code.
+    
+- **CDE does not eliminate thinking**, it relocates it.  
+    The design decisions you do not write down will still be made — just implicitly, during implementation, reviews, debugging, or refactoring, where they are harder to see and harder to revisit.
+    
+- **Context is not written “for the AI”**, but for the project.  
+    AI agents are consumers of this context, just like future developers, reviewers, or maintainers.
+    
+- **If something is too costly to make explicit**, it is often also too unstable to automate reliably.  
+    CDE treats explicit context as a quality filter, not as overhead.
+    
+
+In practice, many teams will find that CDE reduces total effort by:
+
+- lowering rework,
+- reducing misalignment,
+- and making design discussions more focused and repeatable.
+    
+
+CDE shifts effort from _explaining after the fact_ to _deciding with intent_ — especially important when code generation itself is no longer the bottleneck.
+
+CDE does not ask you to specify everything upfront — it asks you to stop paying the cost of implicit decisions later.
+
+---
+
 ## What This Repository Contains
 
 - **CDE.md**  
