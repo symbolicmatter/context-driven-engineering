@@ -10,6 +10,23 @@ This repository serves as a **public reference implementation** of the CDE appro
 
 ---
 
+## How to read this (especially for first-time readers)
+
+This repository describes Context-Driven Engineering (CDE) as a general approach.
+It is intentionally broader and more opinionated than what most teams would adopt at once.
+
+For exploratory or pilot use (for example within an existing organization):
+
+- CDE does **not** need to be adopted in full.
+- The document set can be treated as a **starter kit**, not a prescription.
+- Individual elements (e.g. clearer specs, explicit context for AI agents) can be applied incrementally.
+- The absence of a full example domain is intentional at this stage; the focus is on the *mental model*, not on a finished template.
+
+The goal is not methodological purity, but learning how explicit context can improve
+AI-assisted development in real projects.
+
+---
+
 ## Why Context-Driven Engineering?
 
 Modern software development faces a paradox:
@@ -110,6 +127,8 @@ This is a living body of work.
 
 The ideas here are opinionated, incomplete, and evolving.
 That is intentional.
+
+This repository has been used as background material in exploratory discussions within organizations.
 
 ---
 
