@@ -89,22 +89,21 @@ CDE does not ask you to specify everything upfront — it asks you to stop payin
 
 ## What This Repository Contains
 
-- **CDE.md**  
+- **[CDE.md](./docs/CDE.md)**  
   A concise description of Context-Driven Engineering as a practice.
 
-- **CDE_EXPLAINED.md**  
+- **[CDE_EXPLAINED.md](./docs/CDE_EXPLAINED.md)**  
   A deeper explanation of the mental model behind CDE.
 
-- **DESIGN_WORLDVIEW.md**  
+- **[DESIGN_WORLDVIEW.md](./docs/DESIGN_WORLDVIEW.md)**  
   An example of an explicit design worldview (Object-Centric Design).
   CDE itself is worldview-agnostic.
 
-- **AGENTS.md**  
+- **[AGENTS.md](./docs/AGENTS.md)**  
   An operating manual for AI coding agents working in a CDE environment.
 
 - **example-domain/**  
-  A small but non-trivial domain demonstrating CDE and object-centric design
-  in practice, including real specifications and code.
+  A small but non-trivial domain demonstrating CDE and object-centric design in practice, including real specifications and code. _(Work in progress.)_
 
 ---
 
