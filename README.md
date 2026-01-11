@@ -18,15 +18,14 @@ In this repository, AI agents are discussed conceptually. Operational agent inst
 
 It is intentionally broader and more opinionated than what most teams would adopt at once.
 
-For exploratory or pilot use (for example within an existing organization):
+When engaging with CDE in exploratory or pilot contexts (for example within an existing organization):
 
-- CDE does **not** need to be adopted in full.
-- The document set can be treated as a **starter kit**, not a prescription.
-- Individual elements (e.g. clearer specs, explicit context for AI agents) can be applied incrementally.
-- The absence of a full example domain is intentional at this stage; the focus is on the *mental model*, not on a finished template.
+- CDE does not require all context to be externalized at once.
+- Partial engagement is possible, provided that any explicitly captured context is treated coherently.
+- This repository intentionally focuses on the mental model and document relationships, not on a finished example domain.
 
-The goal is not methodological purity, but learning how explicit context can improve
-AI-assisted development in real projects.
+The goal is not methodological purity, but learning how explicit, coherent context
+changes the quality and reliability of AI-assisted development in real projects.
 
 ---
 
@@ -106,7 +105,8 @@ CDE does not ask you to specify everything upfront — it asks you to stop payin
   An operating manual for AI coding agents working in a CDE environment.
 
 - **example-domain/**  
-  A small but non-trivial domain demonstrating CDE and object-centric design in practice, including real specifications and code. _(Work in progress.)_
+  A placeholder for worked examples applying CDE in practice.  
+  Currently contains template-based documents only. _(Work in progress.)_
 
 ---
 
