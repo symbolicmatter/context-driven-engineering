@@ -6,13 +6,16 @@ Context-Driven Engineering (CDE) is an approach to software development that tre
 In CDE, vision, specifications, architecture, and design constraints are made explicit,
 kept coherent, and used directly by both humans and AI coding agents.
 
-This repository serves as a **public reference implementation** of the CDE approach.
+This repository serves as a **conceptual reference and school of thought** for Context-Driven Engineering (CDE).
 
 ---
 
 ## How to read this (especially for first-time readers)
 
-This repository describes Context-Driven Engineering (CDE) as a general approach.
+This repository describes Context-Driven Engineering (CDE) as a general approach. It does not apply CDE to itself.
+
+In this repository, AI agents are discussed conceptually. Operational agent instructions belong to applied CDE projects and worked examples. Worked examples and applied practices live elsewhere (for example in `example-domain/` or related repositories).
+
 It is intentionally broader and more opinionated than what most teams would adopt at once.
 
 For exploratory or pilot use (for example within an existing organization):
