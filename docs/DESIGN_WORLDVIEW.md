@@ -1,5 +1,8 @@
 ## Object‑Centric Design Worldview
 
+_NOTE: This document is a worked example of a declared design worldview within a project.
+It is not prescribed or required by Context-Driven Engineering itself._
+
 This project deliberately adopts a **Smalltalk‑inspired, message‑centric approach to object‑oriented design**. The intent is not to reproduce Smalltalk as a language, but to apply its underlying worldview when designing, reasoning about, and evolving the system.
 
 This section defines the conceptual frame that both humans and AI coding agents are expected to operate within.
