@@ -191,6 +191,20 @@ It does, however, assume that teams take deliberate responsibility for making le
 
 ---
 
+## Active Use of Context
+
+In CDE, context documents are not passive reference material.  
+They are intended to be actively consulted during design, implementation, and change.
+
+This applies to all contributors to a system, regardless of whether the work is carried out by humans, automated systems, or a combination of both.
+
+When context documents are not actively used, learning that occurs during implementation remains implicit, local, and fragile.  
+CDE exists precisely to prevent this by making shared context explicit and evolvable over time.
+
+How teams ensure that context is actively consulted — through practices, tooling, or workflows — is intentionally left outside the scope of CDE.
+
+---
+
 ## Design Worldviews
 
 CDE is **worldview-agnostic** by design.
