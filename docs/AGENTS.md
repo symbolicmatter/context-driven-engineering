@@ -23,11 +23,13 @@ Before writing or modifying code, read documents in this order:
 
 1. VISION.md  
 2. PRODUCT.md  
-3. DESIGN-WORLDVIEW.md (if present)  
-4. ARCHITECTURE.md  
-5. UX_GUIDELINES.md (if relevant)  
-6. SPEC.md or the relevant spec in `specs/`  
-7. CONTRIBUTING.md  
+3. DOMAIN.md
+4. DESIGN_WORLDVIEW.md (if present)  
+5. ARCHITECTURE.md
+6. CONTEXT.md
+7. SPEC.md or the relevant spec in `specs/`  
+8. UX_GUIDELINES.md (if relevant)  
+9. CONTRIBUTING.md  
 
 If any document is missing or ambiguous, stop and ask.
 
@@ -35,7 +37,7 @@ If any document is missing or ambiguous, stop and ask.
 
 ## 3. Design Worldview Enforcement
 
-This project declares a design worldview in DESIGN-WORLDVIEW.md.
+This project declares a design worldview in DESIGN_WORLDVIEW.md.
 
 When present, this worldview is **binding**.
 
@@ -102,7 +104,7 @@ Work in small, reviewable steps.
 After each significant change:
 
 - Verify alignment with SPEC
-- Verify alignment with DESIGN-WORLDVIEW
+- Verify alignment with DESIGN_WORLDVIEW
 - Note any assumptions made
 
 Large, sweeping changes without checkpoints are discouraged.
