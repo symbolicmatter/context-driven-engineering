@@ -170,27 +170,6 @@ This means that changes in understanding of the domain should ultimately be refl
 
 ---
 
-## Context Evolution
-
-Significant learning inevitably happens during implementation.
-As software is built, insights emerge about domain concepts, constraints, responsibilities, and the suitability of existing architectural boundaries.
-
-Treating context as stable while implementation proceeds is a category error: implementation is one of the primary sources of contextual learning.
-
-In CDE, context is therefore understood as evolutionary.
-The core documents are not static descriptions prepared upfront, but living artifacts that change as understanding deepens.
-
-This learning may affect different documents in different ways:
-
-- **DOMAIN.md** may change when terminology proves ambiguous, incomplete, or misleading.
-- **CONTEXT.md** may change when assumptions, constraints, or external conditions turn out to be incorrect.
-- **ARCHITECTURE.md** may change when structural decisions no longer align with observed behavior or responsibilities.
-
-CDE does not prescribe how learning is captured or integrated.
-It does, however, assume that teams take deliberate responsibility for making learning explicit and shared, rather than leaving it implicit in code or individual decisions.
-
----
-
 ## Active Use of Context
 
 In CDE, context documents are not passive reference material.  
@@ -202,6 +181,35 @@ When context documents are not actively used, learning that occurs during implem
 CDE exists precisely to prevent this by making shared context explicit and evolvable over time.
 
 How teams ensure that context is actively consulted — through practices, tooling, or workflows — is intentionally left outside the scope of CDE.
+
+---
+
+### Context Evolution
+
+Active use of context inevitably leads to learning.
+As software is designed, built, and evolved, new insights emerge about the domain,
+the constraints under which the system operates, and the suitability of existing structures.
+
+Some assumptions turn out to be incomplete or incorrect.
+Some terminology proves ambiguous.
+Some responsibilities or boundaries no longer align with observed behavior.
+
+Treating context as stable while implementation proceeds is a category error:
+implementation is one of the primary sources of contextual learning.
+
+In CDE, context is therefore understood as evolutionary.
+Context documents are not static descriptions created upfront,
+but living artifacts that change as understanding deepens over time.
+
+This learning may affect different documents in different ways:
+
+- **DOMAIN.md** evolves as domain language is clarified, refined, or corrected.
+- **CONTEXT.md** evolves as assumptions, constraints, or external conditions change.
+- **ARCHITECTURE.md** evolves as structural decisions are revisited in light of actual use and behavior.
+
+CDE does not prescribe how learning should be captured or integrated.
+It does, however, assume that teams take deliberate responsibility
+for making learning explicit and shared, rather than leaving it implicit in code or individual decisions.
 
 ---
 
@@ -382,3 +390,19 @@ It accepts that discovery is messy, but insists that understanding be made expli
 It favors clarity over cleverness, responsibility over improvisation, and systems that remain understandable long after their authors have moved on.
 
 Code changes. Context endures.
+
+---
+
+## Related Practices
+
+Some teams choose to operationalize context evolution more explicitly,
+for example by introducing structured reflection or AI-assisted workflows
+to capture and consolidate learning during implementation.
+
+An example of such an approach is the
+**Context-Driven Learning Workflow (CDLW)**,
+which explores one possible way of making learning during implementation
+explicit, reviewable, and integrable into context documents.
+
+These practices are intentionally kept outside the scope of CDE itself.
+CDE provides the conceptual foundation; concrete workflows may vary.
