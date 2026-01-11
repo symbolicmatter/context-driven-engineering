@@ -182,6 +182,8 @@ CDE exists precisely to prevent this by making shared context explicit and evolv
 
 How teams ensure that context is actively consulted — through practices, tooling, or workflows — is intentionally left outside the scope of CDE.
 
+Active use of context does not only guide decisions; it also exposes gaps, inconsistencies, and misunderstandings in the context itself.
+
 ---
 
 ### Context Evolution
@@ -194,7 +196,7 @@ Some assumptions turn out to be incomplete or incorrect.
 Some terminology proves ambiguous.
 Some responsibilities or boundaries no longer align with observed behavior.
 
-Treating context as stable while implementation proceeds is a category error:
+Treating context as stable while active implementation proceeds is a category error:
 implementation is one of the primary sources of contextual learning.
 
 In CDE, context is therefore understood as evolutionary.
