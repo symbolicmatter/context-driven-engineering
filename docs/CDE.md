@@ -219,15 +219,36 @@ for making learning explicit and shared, rather than leaving it implicit in code
 
 CDE is **worldview-agnostic** by design.
 
-Projects may declare a **DESIGN_WORLDVIEW.md** that defines how design decisions are interpreted (for example, object-centric, functional, data-oriented).
+It does not prescribe *how* software should be designed, only **that the design worldview must be made explicit when it materially affects design decisions**.
+
+Projects may declare a **DESIGN_WORLDVIEW.md** that defines the conceptual lens through which specifications, architecture, and behavior are interpreted (for example: object-centric, functional, data-oriented).
 
 If present:
 
-* The worldview is normative
-* Humans and AI agents are expected to follow it
-* It constrains interpretation of specifications and architecture
+- The worldview is **normative**
+- Humans and AI agents are expected to follow it
+- It constrains interpretation of specifications and architectural decisions
+- Violations require explicit discussion or revision of context
 
-CDE itself does not prescribe a worldview, but it requires one to be explicit when it materially affects design decisions.
+CDE itself does not mandate a particular worldview.
+It mandates **explicitness and coherence**.
+
+### DESIGN_WORLDVIEW.md in This Repository
+
+This repository includes a **DESIGN_WORLDVIEW.md** as a **worked example**.
+
+It demonstrates what an explicit, committed design worldview can look like in practice,
+including the level of clarity, normativity, and consequence expected when such a worldview is declared.
+
+The content and tone of this document reflect how a worldview would be written **inside an actual project that adopts it**.
+It should be read as an example of *application*, not as a requirement of CDE itself.
+
+Other projects using CDE are expected to either:
+
+- declare their own design worldview explicitly, or
+- consciously choose not to, accepting the resulting interpretive freedom.
+
+CDE remains neutral; individual projects are not.
 
 ---
 
