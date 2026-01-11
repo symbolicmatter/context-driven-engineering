@@ -34,10 +34,10 @@ Context in CDE:
 - governs change by making upstream intent explicit before downstream implementation
     
 
-When context changes, downstream artifacts are expected to follow.  
+When context changes, downstream artifacts are expected to follow.
 When downstream reality conflicts with context, the context must be revised explicitly.
 
-This directional relationship is intentional and non-negotiable.
+This directional relationship is intentional and fundamental to the CDE mental model.
 
 ---
 
@@ -85,7 +85,7 @@ Exploration is not a failure mode. It is how understanding is gained.
 
 ### Commitment Points
 
-CDE is enforced at commitment points, such as:
+CDE becomes most visible at commitment points, such as:
 
 * Preparing a release
 * Reaching a milestone
@@ -103,7 +103,8 @@ At these points:
 ## Principles
 
 * **Context as the Product**
-  Vision, specification, architecture, and plans are primary artifacts. Code is secondary.
+Vision, domain meaning, constraints, specifications, architecture, and plans are primary artifacts. Code is secondary.
+
 
 * **Single Responsibility of Documents**
   Each document exists for a specific purpose and must not duplicate others.
@@ -126,19 +127,19 @@ At these points:
 
 CDE uses a small ecosystem of interrelated documents. Not all projects require all documents, but any document that exists must be maintained deliberately and kept internally consistent.
 
-| Document                | Purpose                                    | Audience                         | Update Frequency |
-| ----------------------- | ------------------------------------------ | -------------------------------- | ---------------- |
-| **VISION.md**           | Long-term intent and direction (why)       | All stakeholders                 | Rare             |
-| **PRODUCT.md**          | Problem, users, scope, non-goals           | All contributors                 | Rare             |
-| **DOMAIN.md**           | Domain language, concepts, invariants      | All stakeholders, developers, AI | Rare             |
-| **DESIGN_WORLDVIEW.md** | Conceptual design frame (optional)         | Developers, architects, AI       | Rare             |
-| **ARCHITECTURE.md**     | Structural and technical constraints (how) | Developers                       | Moderate         |
-| **CONTEXT.md**          | Constraints and assumptions                | Developers, architects, AI       | Moderate         |
-| **SPEC.md** (or specs/) | Behavioral contracts (what)                | Developers, QA, AI               | Frequent         |
-| **PLAN.md**             | Sequencing and intent over time            | Developers, AI                   | Frequent         |
-| **UX_GUIDELINES.md**    | Interaction semantics and patterns         | Designers, developers, AI        | Moderate         |
-| **CONTRIBUTING.md**     | Workflow, conventions, contribution rules  | All contributors                 | Moderate         |
-| **AGENTS.md**           | Operating rules for AI agents              | AI agents, reviewers             | Moderate         |
+| Document                | Purpose                                     | Audience                         | Update Frequency |
+| ----------------------- | ------------------------------------------- | -------------------------------- | ---------------- |
+| **VISION.md**           | Long-term intent and direction (why)        | All stakeholders                 | Rare             |
+| **PRODUCT.md**          | Problem, users, scope, non-goals            | All contributors                 | Rare             |
+| **DOMAIN.md**           | Domain language, concepts, invariants       | All stakeholders, developers, AI | Rare             |
+| **DESIGN_WORLDVIEW.md** | Conceptual design frame (optional)          | Developers, architects, AI       | Rare             |
+| **ARCHITECTURE.md**     | Structural and technical constraints (how)  | Developers                       | Moderate         |
+| **CONTEXT.md**          | Constraints and assumptions                 | Developers, architects, AI       | Moderate         |
+| **SPEC.md** (or specs/) | Behavioral contracts (what)                 | Developers, QA, AI               | Frequent         |
+| **PLAN.md**             | Sequencing and intent over time             | Developers, AI                   | Frequent         |
+| **UX_GUIDELINES.md**    | Interaction semantics and patterns          | Designers, developers, AI        | Moderate         |
+| **CONTRIBUTING.md**     | Workflow, conventions, contribution rules   | All contributors                 | Moderate         |
+| **AGENTS.md**           | Operating rules for AI agents (applied CDE) | AI agents, reviewers             | Moderate         |
 
 Documents reference each other, but do not duplicate content. Terminology and domain meaning are owned by DOMAIN.md.
 
@@ -267,7 +268,7 @@ This gate is intentionally lightweight, but non-optional.
 
 ## Stop Conditions
 
-When acting as an AI agent or reviewer, work must **pause** if:
+In applied CDE settings, work is expected to **pause** if:
 
 * Specifications contradict architecture
 * Required behavior is underspecified in critical paths
@@ -289,12 +290,14 @@ Focus: shared understanding.
 Typical documents:
 
 * PRODUCT.md
+* DOMAIN.md
 * ARCHITECTURE.md
+* CONTEXT.md
 * CONTRIBUTING.md
 
 Goal:
 
-* Make intent explicit enough for another developer or an AI agent to contribute safely.
+* Make intent, meaning, and constraints explicit enough for another developer or an AI agent to contribute safely.
 
 ---
 
@@ -307,6 +310,7 @@ Adds:
 * VISION.md
 * SPEC.md (per feature)
 * UX_GUIDELINES.md
+* _Refinement of DOMAIN.md and CONTEXT.md as behavior becomes concrete_
 
 Goal:
 
@@ -327,6 +331,7 @@ Adds:
 Goal:
 
 * Enable reliable parallel work and agentic workflows.
+* Ensure that evolving domain meaning and contextual assumptions remain coherent across parallel human and AI work.
 
 ---
 
