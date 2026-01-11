@@ -1,6 +1,6 @@
-# Canonical Templates for Context-Driven Engineering (CDE)
+# Example Templates for Context-Driven Engineering (CDE)
 
-This document provides **canonical templates** for the core documents used in Context-Driven Engineering (CDE).
+This document provides **example templates** for documents commonly used in Context-Driven Engineering (CDE).
 
 The templates are intentionally concise and structured. They are meant to:
 
@@ -9,6 +9,12 @@ The templates are intentionally concise and structured. They are meant to:
 * Encourage disciplined thinking without over-specification
 
 They are inspired by the *Four-Document Pattern* from the ContextFlow repository, adapted to the broader and more flexible scope of CDE.
+
+These templates are illustrative, not normative.
+
+They demonstrate one coherent way of externalizing context in written form.
+Projects applying CDE are expected to adapt, omit, or restructure these documents
+based on their needs and constraints.
 
 ---
 
