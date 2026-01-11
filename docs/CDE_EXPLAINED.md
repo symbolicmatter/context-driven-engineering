@@ -1,6 +1,6 @@
 # Context-Driven Engineering (CDE)
 
-This document elaborates on the mental model behind Context-Driven Engineering. Read **CDE.md** first for the concise definition.
+This document elaborates on the mental model behind Context-Driven Engineering. Read **[CDE.md](../CDE.md)** first for the concise definition.
 
 ## Why Context-Driven Engineering Exists
 
@@ -32,8 +32,15 @@ In CDE, *context* is the collection of authoritative artifacts that explain:
 * **How decisions should be interpreted** (design worldview)
 
 Context is explicit, versioned, and shared.
+It is treated as a first-class design concern, not as background knowledge or tribal understanding.
 
-Anything that materially influences design decisions but is not written down is considered a risk.
+In practice, these aspects are often externalized into distinct documents
+(such as VISION.md, PRODUCT.md, DOMAIN.md, CONTEXT.md, ARCHITECTURE.md, and SPEC.md).
+CDE treats these documents as concrete expressions of underlying conceptual responsibilities,
+rather than as a prescribed checklist of artifacts.
+
+Anything that materially influences design decisions but is not written down
+remains implicit, unverifiable, and therefore risky.
 
 ---
 
@@ -60,41 +67,54 @@ graph TD
         VISION["VISION.MD<br/>Long-term Intent"] --> PRODUCT["PRODUCT.MD<br/>Problem & Scope"]
     end
 
-    subgraph Philosophy ["2. The Lens (The 'How we Think')"]
+    subgraph Semantics ["2. Meaning (The 'What we Mean')"]
+        DOMAIN["DOMAIN.MD<br/>Language & Invariants"]
+    end
+
+    subgraph Philosophy ["3. The Lens (The 'How we Think')"]
         WORLDVIEW["DESIGN_WORLDVIEW.MD<br/>Object-centric, Functional, etc."]
     end
 
-    subgraph Constraints ["3. Guardrails (The 'How we Build')"]
+    subgraph Constraints ["4. Guardrails (The 'Where we Operate')"]
+        CONTEXT["CONTEXT.MD<br/>Constraints & Assumptions"]
         ARCH["ARCHITECTURE.MD<br/>Technical Constraints"]
         UX["UX_GUIDELINES.MD<br/>Interaction Semantics"]
     end
 
-    subgraph Specification ["4. The Behavioral Contract (The 'What')"]
+    subgraph Specification ["5. The Behavioral Contract (The 'What')"]
         SPEC["SPEC.MD / specs/<br/>Behavioral Contracts"]
     end
 
-    subgraph Orchestration ["5. Tactical Execution (The 'When' & 'Who')"]
+    subgraph Orchestration ["6. Tactical Execution (The 'When' & 'Who')"]
         PLAN["PLAN.MD<br/>Sequencing & Milestones"]
         AGENTS["AGENTS.MD / CONTRIBUTING.md<br/>Execution & Contribution Rules"]
     end
 
-    subgraph Reality ["6. Projection (The Output)"]
+    subgraph Reality ["7. Projection (The Output)"]
         CODE["SOURCE CODE<br/>System Implementation"]
     end
 
     %% Authority Flow
-    PRODUCT --> SPEC
+    PRODUCT --> DOMAIN
+    DOMAIN --> SPEC
+
+    WORLDVIEW --> SPEC
     WORLDVIEW --> ARCH
     WORLDVIEW --> UX
-    WORLDVIEW --> SPEC
+
+    CONTEXT --> ARCH
+    CONTEXT --> SPEC
     ARCH --> SPEC
     UX --> SPEC
+
     SPEC --> PLAN
     PLAN --> CODE
     AGENTS --> CODE
 
     %% Feedback Loops (Systems Thinking)
     CODE -.->|Refines| SPEC
+    CODE -.->|Clarifies| DOMAIN
+    CODE -.->|Reveals| CONTEXT
     SPEC -.->|Validates| ARCH
     CODE -.->|Updates| PLAN
 
@@ -105,6 +125,7 @@ graph TD
 
     %% Styling
     style Strategy fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style Semantics fill:#f1f8e9,stroke:#689f38,stroke-width:2px
     style Philosophy fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5
     style Constraints fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
     style Specification fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
@@ -134,7 +155,7 @@ Authority flows from *intent* to *implementation*:
 * **Plans and Agent Rules** govern execution
 * **Code** is the observable outcome
 
-At no point should downstream artifacts override upstream authority without explicit revision of the context.
+In CDE, downstream artifacts are not treated as overriding upstream authority without explicit revision of the context.
 
 Authority in this sense is conceptual, not hierarchical. It defines which decisions constrain others, not who is allowed to make them.
 
@@ -152,7 +173,7 @@ As code is written and systems are exercised:
 
 This learning flows *upward*:
 
-* Code refines specifications
+* Code refines specifications and clarifies domain meaning and contextual assumptions
 * Specifications validate or challenge architecture
 * Plans are updated based on actual progress
 
@@ -188,9 +209,9 @@ Commitment points include:
 
 At these points, a **Consistency Gate** applies:
 
-* Specifications must align with architecture
-* Terminology must be consistent
-* Declared design worldview must not be violated
+* Specifications align with architecture
+* Terminology matches domain meaning and is consistent
+* Declared design worldview is not violated
 
 If inconsistencies are found, work pauses until the context is reconciled.
 
