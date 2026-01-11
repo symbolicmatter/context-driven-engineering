@@ -12,6 +12,9 @@ coherence, and conceptual rigor of the work.
 
 ## What This Repository Is
 
+Contributions should strengthen CDE as a conceptual framework,
+not turn this repository into a prescriptive methodology or starter kit.
+
 This repository exists to:
 
 - Articulate Context-Driven Engineering (CDE) clearly
@@ -71,7 +74,7 @@ If you disagree with a worldview, raise it explicitly in discussion.
 3. Reference existing documents explicitly
 4. Explain assumptions when introducing new material
 
-Large conceptual changes should always start as discussion.
+Large conceptual changes typically start as discussion.
 
 ---
 
