@@ -159,6 +159,38 @@ Issue trackers, roadmaps, and delivery tooling may exist alongside PLAN.md, but 
 
 ---
 
+## Living Documents and Ownership
+
+Each core document in CDE has a clear purpose and an explicit form of ownership.
+Ownership does not imply that the contents of a document are fixed or final.
+It implies responsibility for maintaining coherence as understanding evolves.
+
+For example, terminology and domain meaning are owned by DOMAIN.md.
+This means that changes in understanding of the domain should ultimately be reflected there, even if those insights emerge elsewhere in the process.
+
+---
+
+## Context Evolution
+
+Significant learning inevitably happens during implementation.
+As software is built, insights emerge about domain concepts, constraints, responsibilities, and the suitability of existing architectural boundaries.
+
+Treating context as stable while implementation proceeds is a category error: implementation is one of the primary sources of contextual learning.
+
+In CDE, context is therefore understood as evolutionary.
+The core documents are not static descriptions prepared upfront, but living artifacts that change as understanding deepens.
+
+This learning may affect different documents in different ways:
+
+- **DOMAIN.md** may change when terminology proves ambiguous, incomplete, or misleading.
+- **CONTEXT.md** may change when assumptions, constraints, or external conditions turn out to be incorrect.
+- **ARCHITECTURE.md** may change when structural decisions no longer align with observed behavior or responsibilities.
+
+CDE does not prescribe how learning is captured or integrated.
+It does, however, assume that teams take deliberate responsibility for making learning explicit and shared, rather than leaving it implicit in code or individual decisions.
+
+---
+
 ## Design Worldviews
 
 CDE is **worldview-agnostic** by design.
@@ -278,10 +310,19 @@ graph TD
     SPEC --> PLAN
     PLAN --> CODE
     AGENTS --> CODE
+
     CODE -.-> SPEC
+    CODE -.-> DOMAIN
+    CODE -.-> CONTEXT
+    CODE -.-> ARCHITECTURE
 ```
 
-This diagram is an orientation aid, not a prescription. Real projects will vary.
+This diagram is an orientation aid, not a prescription.
+It highlights how implementation feeds back not only into specifications, but also into the broader context of the project.
+
+The dotted lines indicate learning loops: insights gained during implementation may require updates to domain understanding, contextual assumptions, or architectural structure.
+
+Real projects will vary in how and when this learning is made explicit.
 
 ---
 
