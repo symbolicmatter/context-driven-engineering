@@ -131,6 +131,7 @@ CDE uses a small ecosystem of interrelated documents. Not all projects require a
 | **VISION.md**           | Long-term intent and direction (why)       | All stakeholders                 | Rare             |
 | **PRODUCT.md**          | Problem, users, scope, non-goals           | All contributors                 | Rare             |
 | **DOMAIN.md**           | Domain language, concepts, invariants      | All stakeholders, developers, AI | Rare             |
+| **DESIGN_WORLDVIEW.md** | Conceptual design frame (optional)         | Developers, architects, AI       | Rare             |
 | **ARCHITECTURE.md**     | Structural and technical constraints (how) | Developers                       | Moderate         |
 | **CONTEXT.md**          | Constraints and assumptions                | Developers, architects, AI       | Moderate         |
 | **SPEC.md** (or specs/) | Behavioral contracts (what)                | Developers, QA, AI               | Frequent         |
