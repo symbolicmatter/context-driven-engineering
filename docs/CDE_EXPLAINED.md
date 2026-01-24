@@ -40,7 +40,7 @@ CDE treats these documents as concrete expressions of underlying conceptual resp
 rather than as a prescribed checklist of artifacts.
 
 Anything that materially influences design decisions but is not written down
-remains implicit, unverifiable, and therefore risky.
+cannot be inspected, challenged, or evolved, and therefore represents a design risk.
 
 ---
 
