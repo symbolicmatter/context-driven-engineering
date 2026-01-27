@@ -1,3 +1,13 @@
+---
+subject: CDE
+description: Canonical definition of Context-Driven Engineering
+role: core
+priority: high
+status: active
+name: CDE Core Definition
+path_name: CDE/docs/CDE.md
+last_modified: 2026-01-27
+---
 # Context-Driven Engineering (CDE)
 
 ## Overview

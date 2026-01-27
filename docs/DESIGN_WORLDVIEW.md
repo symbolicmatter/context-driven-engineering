@@ -1,4 +1,14 @@
-## Object‑Centric Design Worldview
+---
+subject: CDE
+description: Example of an explicit design worldview applied within a CDE project
+role: core
+priority: medium
+status: active
+name: Object-Centric Design Worldview
+path_name: CDE/docs/DESIGN_WORLDVIEW.md
+last_modified: 2026-01-27
+---
+# Object‑Centric Design Worldview
 
 _NOTE: This document is a worked example of a declared design worldview within a project.
 It is not prescribed or required by Context-Driven Engineering itself._
