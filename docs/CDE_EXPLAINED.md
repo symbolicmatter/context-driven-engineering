@@ -1,3 +1,13 @@
+---
+subject: CDE
+description: System-level mental model and rationale behind Context-Driven Engineering
+role: core
+priority: high
+status: active
+name: CDE Explained
+path_name: CDE/docs/CDE_EXPLAINED.md
+last_modified: 2026-01-27
+---
 # Context-Driven Engineering (CDE)
 
 This document elaborates on the mental model behind Context-Driven Engineering. Read **[CDE.md](../CDE.md)** first for the concise definition.

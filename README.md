@@ -1,3 +1,13 @@
+---
+subject: CDE
+description: High-level introduction and positioning of Context-Driven Engineering
+role: core
+priority: high
+status: active
+name: CDE README
+path_name: CDE/README.md
+last_modified: 2026-01-27
+---
 # Context-Driven Engineering
 
 Context-Driven Engineering (CDE) is an approach to software development that treats
