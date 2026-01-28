@@ -8,7 +8,7 @@ name: CDE Contributing Guide
 path_name: CDE/CONTRIBUTING.md
 last_modified: 2026-01-27
 ---
-# Contributing to Context-Driven Engineering
+# Contributing to Context-Driven Engineering (CDE)
 
 Thank you for your interest in contributing.
 
@@ -108,6 +108,7 @@ Conceptual integrity matters more than consensus.
 AI-assisted contributions are allowed.
 
 However:
+
 - You are responsible for the intent and correctness
 - Generated text must be reviewed and understood
 - Contributions that read as generic AI output will be rejected
