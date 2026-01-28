@@ -42,7 +42,6 @@ Context in CDE:
 - drives design decisions rather than documenting them after the fact
 - constrains interpretation so that behavior is not inferred inconsistently
 - governs change by making upstream intent explicit before downstream implementation
-    
 
 When context changes, downstream artifacts are expected to follow.
 When downstream reality conflicts with context, the context must be revised explicitly.
@@ -57,15 +56,15 @@ CDE does **not** assume that software is designed in a perfectly rational, linea
 
 In practice:
 
-* Understanding emerges through exploration
-* Designs evolve as constraints surface
-* Decisions are often revised with hindsight
+- Understanding emerges through exploration
+- Designs evolve as constraints surface
+- Decisions are often revised with hindsight
 
 CDE adopts the stance that while design is rarely discovered rationally, it is **maintained as if it were**, because doing so:
 
-* Makes systems reviewable
-* Makes reasoning explicit
-* Makes maintenance and handover possible
+- Makes systems reviewable
+- Makes reasoning explicit
+- Makes maintenance and handover possible
 
 Documentation in CDE therefore represents the **best current explanation** of the system, not a historical transcript of how it was discovered.
 
@@ -83,13 +82,13 @@ Most day-to-day work happens here.
 
 Characteristics:
 
-* Code and notes may be incomplete
-* Context documents may lag behind discoveries
-* Experiments, spikes, and discarded ideas are normal
+- Code and notes may be incomplete
+- Context documents may lag behind discoveries
+- Experiments, spikes, and discarded ideas are normal
 
 Expectation:
 
-* Leave breadcrumbs: what was tried, what was learned, what failed
+- Leave breadcrumbs: what was tried, what was learned, what failed
 
 Exploration is not a failure mode. It is how understanding is gained.
 
@@ -97,38 +96,37 @@ Exploration is not a failure mode. It is how understanding is gained.
 
 CDE becomes most visible at commitment points, such as:
 
-* Preparing a release
-* Reaching a milestone
-* Handing work to another developer or team
-* Asking an AI agent to extend or refactor existing behavior
+- Preparing a release
+- Reaching a milestone
+- Handing work to another developer or team
+- Asking an AI agent to extend or refactor existing behavior
 
 At these points:
 
-* Context must be coherent and internally consistent
-* Specifications become authoritative
-* Known contradictions are resolved or explicitly documented
+- Context must be coherent and internally consistent
+- Specifications become authoritative
+- Known contradictions are resolved or explicitly documented
 
 ---
 
 ## Principles
 
-* **Context as the Product**
+- **Context as the Product**
 Vision, domain meaning, constraints, specifications, architecture, and plans are primary artifacts. Code is secondary.
 
-
-* **Single Responsibility of Documents**
+- **Single Responsibility of Documents**
   Each document exists for a specific purpose and must not duplicate others.
 
-* **Spec-Driven Development**
+- **Spec-Driven Development**
   Behavioral intent is defined explicitly, even if discovered iteratively.
 
-* **Human–AI Symmetry**
+- **Human–AI Symmetry**
   Humans and AI agents consume the same context and are bound by the same constraints.
 
-* **Internal Consistency Over Local Optimization**
+- **Internal Consistency Over Local Optimization**
   Clarity across documents matters more than isolated cleverness in code.
 
-* **Explicit Trade-offs**
+- **Explicit Trade-offs**
   When compromises are made, they are documented rather than hidden in code.
 
 ---
@@ -155,14 +153,14 @@ Documents reference each other, but do not duplicate content. Terminology and do
 
 **Note on PLAN.md**
 
-PLAN.md exists to support _reasoning about sequence and dependency_, not to replace project management tools.
+PLAN.md exists to support *reasoning about sequence and dependency*, not to replace project management tools.
 
 It captures:
 
 - intended order of work
 - dependencies between specifications
 - milestones that represent meaningful commitment points
-    
+
 PLAN.md is allowed to be provisional and incomplete.  
 Its purpose is to prevent accidental reordering and premature optimization, especially when humans and AI agents collaborate.
 
@@ -267,10 +265,10 @@ CDE remains neutral; individual projects are not.
 
 Before work is considered complete at a commitment point, the following must hold:
 
-* Every implemented feature has a corresponding specification
-* Specifications reference relevant architectural elements
-* Terminology matches DOMAIN.md
-* Behavioral changes are noted, even briefly
+- Every implemented feature has a corresponding specification
+- Specifications reference relevant architectural elements
+- Terminology matches DOMAIN.md
+- Behavioral changes are noted, even briefly
 
 This gate is intentionally lightweight, but non-optional.
 
@@ -280,10 +278,10 @@ This gate is intentionally lightweight, but non-optional.
 
 In applied CDE settings, work is expected to **pause** if:
 
-* Specifications contradict architecture
-* Required behavior is underspecified in critical paths
-* A change would violate the declared design worldview
-* Context documents disagree on terminology or intent
+- Specifications contradict architecture
+- Required behavior is underspecified in critical paths
+- A change would violate the declared design worldview
+- Context documents disagree on terminology or intent
 
 In such cases, clarification is required before proceeding.
 
@@ -299,15 +297,15 @@ Focus: shared understanding.
 
 Typical documents:
 
-* PRODUCT.md
-* DOMAIN.md
-* ARCHITECTURE.md
-* CONTEXT.md
-* CONTRIBUTING.md
+- PRODUCT.md
+- DOMAIN.md
+- ARCHITECTURE.md
+- CONTEXT.md
+- CONTRIBUTING.md
 
 Goal:
 
-* Make intent, meaning, and constraints explicit enough for another developer or an AI agent to contribute safely.
+- Make intent, meaning, and constraints explicit enough for another developer or an AI agent to contribute safely.
 
 ---
 
@@ -317,14 +315,14 @@ Focus: reducing ambiguity and rework.
 
 Adds:
 
-* VISION.md
-* SPEC.md (per feature)
-* UX_GUIDELINES.md
-* _Refinement of DOMAIN.md and CONTEXT.md as behavior becomes concrete_
+- VISION.md
+- SPEC.md (per feature)
+- UX_GUIDELINES.md
+- *Refinement of DOMAIN.md and CONTEXT.md as behavior becomes concrete*
 
 Goal:
 
-* Define behavioral contracts before or alongside implementation.
+- Define behavioral contracts before or alongside implementation.
 
 ---
 
@@ -334,14 +332,14 @@ Focus: coordination across humans and AI agents.
 
 Adds:
 
-* PLAN.md
-* AGENTS.md
-* Structured specs (specs/ folder, status tracking)
+- PLAN.md
+- AGENTS.md
+- Structured specs (specs/ folder, status tracking)
 
 Goal:
 
-* Enable reliable parallel work and agentic workflows.
-* Ensure that evolving domain meaning and contextual assumptions remain coherent across parallel human and AI work.
+- Enable reliable parallel work and agentic workflows.
+- Ensure that evolving domain meaning and contextual assumptions remain coherent across parallel human and AI work.
 
 ---
 
@@ -390,16 +388,16 @@ Real projects will vary in how and when this learning is made explicit.
 
 CDE does not eliminate failure. Common failure modes include:
 
-* **Ceremonial Documentation**
+- **Ceremonial Documentation**
   Documents exist but are not consulted.
 
-* **Context Drift**
+- **Context Drift**
   Code changes without updating specifications or architecture.
 
-* **False Clarity**
+- **False Clarity**
   Internally consistent documents that solve the wrong problem.
 
-* **Deadline Erosion**
+- **Deadline Erosion**
   Rules ignored under time pressure.
 
 CDE mitigates these risks through visibility and discipline, not automation.
@@ -410,10 +408,10 @@ CDE mitigates these risks through visibility and discipline, not automation.
 
 CDE may be unsuitable when:
 
-* Speed matters more than clarity
-* Requirements are intentionally disposable
-* Software lifetime is very short
-* There is no appetite for maintaining shared context
+- Speed matters more than clarity
+- Requirements are intentionally disposable
+- Software lifetime is very short
+- There is no appetite for maintaining shared context
 
 CDE is a craft discipline, not a universal solution.
 
@@ -438,7 +436,7 @@ for example by introducing structured reflection or AI-assisted workflows
 to capture and consolidate learning during implementation.
 
 An example of such an approach is the
-**Context-Driven Learning Workflow (CDLW)**,
+**Context-Driven Development Workflow (CDDW)**,
 which explores one possible way of making learning during implementation
 explicit, reviewable, and integrable into context documents.
 

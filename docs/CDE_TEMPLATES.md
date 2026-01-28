@@ -14,9 +14,9 @@ This document provides **example templates** for documents commonly used in Cont
 
 The templates are intentionally concise and structured. They are meant to:
 
-* Make intent explicit
-* Reduce ambiguity for humans and AI agents
-* Encourage disciplined thinking without over-specification
+- Make intent explicit
+- Reduce ambiguity for humans and AI agents
+- Encourage disciplined thinking without over-specification
 
 They are inspired by the *Four-Document Pattern* from the ContextFlow repository, adapted to the broader and more flexible scope of CDE.
 
@@ -84,10 +84,10 @@ Describe the domain in plain language. What kind of world does this system model
 
 List and define the key domain concepts. Use domain language, not technical abstractions.
 
-* Concept name
+- Concept name
 
-  * Description
-  * Key distinctions or nuances
+  - Description
+  - Key distinctions or nuances
 
 ### Invariants and rules
 
@@ -243,7 +243,7 @@ Define expectations for clarity, consistency, and intent.
 
 ## Notes on Use
 
-* Not all projects need all documents from day one.
-* Documents should be added as the need for explicit context arises.
-* Brevity and clarity are preferred over completeness.
-* When in doubt, make assumptions explicit rather than implicit.
+- Not all projects need all documents from day one.
+- Documents should be added as the need for explicit context arises.
+- Brevity and clarity are preferred over completeness.
+- When in doubt, make assumptions explicit rather than implicit.

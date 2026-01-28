@@ -10,10 +10,10 @@ Describe the domain in plain language. What kind of world does this system model
 
 List and define the key domain concepts. Use domain language, not technical abstractions.
 
-* Concept name
+- Concept name
 
-  * Description
-  * Key distinctions or nuances
+  - Description
+  - Key distinctions or nuances
 
 ### Invariants and rules
 
