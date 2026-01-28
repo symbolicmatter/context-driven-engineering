@@ -18,10 +18,10 @@ Most software engineering problems are not caused by bad code.
 
 They are caused by:
 
-* Unclear intent
-* Implicit assumptions
-* Contradictory decisions made at different times
-* Knowledge that lives in people’s heads instead of shared artifacts
+- Unclear intent
+- Implicit assumptions
+- Contradictory decisions made at different times
+- Knowledge that lives in people’s heads instead of shared artifacts
 
 Context-Driven Engineering (CDE) starts from a simple observation:
 
@@ -35,11 +35,11 @@ CDE treats context not as supporting information, but as the **primary engineeri
 
 In CDE, *context* is the collection of authoritative artifacts that explain:
 
-* **Why** the system exists (intent, goals, non-goals)
-* **What** the system must do (behavioral contracts)
-* **How** the system is constrained (architecture, UX semantics)
-* **When and in what order** work should happen (planning)
-* **How decisions should be interpreted** (design worldview)
+- **Why** the system exists (intent, goals, non-goals)
+- **What** the system must do (behavioral contracts)
+- **How** the system is constrained (architecture, UX semantics)
+- **When and in what order** work should happen (planning)
+- **How decisions should be interpreted** (design worldview)
 
 Context is explicit, versioned, and shared.
 It is treated as a first-class design concern, not as background knowledge or tribal understanding.
@@ -59,16 +59,17 @@ cannot be inspected, challenged, or evolved, and therefore represents a design r
 The diagram below shows Context-Driven Engineering as a *system of relationships*, not as a step-by-step process.
 
 It exists to make explicit what is often implicit in software projects:
+
 - where authority originates
 - which artifacts constrain others
 - how learning from reality feeds back into design decisions
 
 The diagram combines two essential ideas:
+
 - **Authority flow** (solid arrows), moving downward from intent to implementation
 - **Feedback flow** (dotted arrows), moving upward from reality back into context
 
 A **Consistency Gate** highlights moments of commitment, where context and code must be brought back into alignment.
-
 
 ```mermaid
 graph TD
@@ -158,12 +159,12 @@ CDE models software development as a system with two complementary flows.
 
 Authority flows from *intent* to *implementation*:
 
-* **Vision and Product** define the problem space
-* **Design Worldview** defines the lens through which decisions are interpreted
-* **Architecture and UX Guidelines** define hard constraints
-* **Specifications** define behavioral contracts
-* **Plans and Agent Rules** govern execution
-* **Code** is the observable outcome
+- **Vision and Product** define the problem space
+- **Design Worldview** defines the lens through which decisions are interpreted
+- **Architecture and UX Guidelines** define hard constraints
+- **Specifications** define behavioral contracts
+- **Plans and Agent Rules** govern execution
+- **Code** is the observable outcome
 
 In CDE, downstream artifacts are not treated as overriding upstream authority without explicit revision of the context.
 
@@ -177,15 +178,15 @@ Reality pushes back.
 
 As code is written and systems are exercised:
 
-* Hidden constraints are discovered
-* Assumptions are invalidated
-* Edge cases emerge
+- Hidden constraints are discovered
+- Assumptions are invalidated
+- Edge cases emerge
 
 This learning flows *upward*:
 
-* Code refines specifications and clarifies domain meaning and contextual assumptions
-* Specifications validate or challenge architecture
-* Plans are updated based on actual progress
+- Code refines specifications and clarifies domain meaning and contextual assumptions
+- Specifications validate or challenge architecture
+- Plans are updated based on actual progress
 
 CDE does not deny exploration. It structures how learning is captured.
 
@@ -199,8 +200,8 @@ It is a **projection** of the current context.
 
 This does not diminish the importance of code. It clarifies responsibility:
 
-* If code behaves incorrectly, the first question is not “who wrote this?”
-* The first question is “where was the context unclear, contradictory, or incomplete?”
+- If code behaves incorrectly, the first question is not “who wrote this?”
+- The first question is “where was the context unclear, contradictory, or incomplete?”
 
 This shift moves teams away from blame and toward systemic improvement.
 
@@ -212,16 +213,16 @@ CDE distinguishes between ongoing exploration and **commitment points**.
 
 Commitment points include:
 
-* Preparing a release
-* Reaching a milestone
-* Handing work to another developer or team
-* Asking an AI agent to extend existing behavior
+- Preparing a release
+- Reaching a milestone
+- Handing work to another developer or team
+- Asking an AI agent to extend existing behavior
 
 At these points, a **Consistency Gate** applies:
 
-* Specifications align with architecture
-* Terminology matches domain meaning and is consistent
-* Declared design worldview is not violated
+- Specifications align with architecture
+- Terminology matches domain meaning and is consistent
+- Declared design worldview is not violated
 
 If inconsistencies are found, work pauses until the context is reconciled.
 
@@ -237,9 +238,9 @@ However, when a **DESIGN_WORLDVIEW.md** is present, it becomes a **normative len
 
 The worldview:
 
-* Defines how concepts such as “state”, “behavior”, and “collaboration” should be understood
-* Prevents mixing incompatible paradigms unintentionally
-* Applies equally to humans and AI agents
+- Defines how concepts such as “state”, “behavior”, and “collaboration” should be understood
+- Prevents mixing incompatible paradigms unintentionally
+- Applies equally to humans and AI agents
 
 Violations of the declared worldview trigger a stop condition.
 
@@ -249,16 +250,16 @@ Violations of the declared worldview trigger a stop condition.
 
 CDE assumes that:
 
-* Humans and AI agents work from the same context
-* Both are constrained by the same rules
-* Neither is trusted to “fill in the gaps” silently
+- Humans and AI agents work from the same context
+- Both are constrained by the same rules
+- Neither is trusted to “fill in the gaps” silently
 
 AI agents are treated as junior contributors:
 
-* Fast
-* Tireless
-* Literal
-* Dangerous when underspecified
+- Fast
+- Tireless
+- Literal
+- Dangerous when underspecified
 
 This symmetry forces precision and reduces hidden assumptions.
 
@@ -268,10 +269,10 @@ This symmetry forces precision and reduces hidden assumptions.
 
 CDE is not:
 
-* Prompt engineering
-* A replacement for judgment or experience
-* A guarantee of perfect software
-* A mass-adoption methodology
+- Prompt engineering
+- A replacement for judgment or experience
+- A guarantee of perfect software
+- A mass-adoption methodology
 
 It is a discipline for teams and individuals who are willing to trade improvisation for clarity when the cost of misalignment is high.
 
@@ -281,10 +282,10 @@ It is a discipline for teams and individuals who are willing to trade improvisat
 
 CDE shines when:
 
-* Systems are long-lived
-* Multiple people or agents collaborate
-* Architectural integrity matters
-* Knowledge transfer is expected
+- Systems are long-lived
+- Multiple people or agents collaborate
+- Architectural integrity matters
+- Knowledge transfer is expected
 
 It is intentionally overkill for throwaway prototypes.
 
