@@ -18,6 +18,9 @@ It is a **reference body of thought and practice**.
 Contributions are welcome, but they are expected to respect the intent,
 coherence, and conceptual rigor of the work.
 
+By contributing, you agree that your contributions are licensed under CC
+BY-NC-SA 4.0.
+
 ---
 
 ## What This Repository Is
