@@ -16,8 +16,6 @@ They demonstrate one coherent way of externalizing context in written form.
 Projects applying CDE are expected to adapt, omit, or restructure these documents
 based on their needs and constraints.
 
----
-
 ## VISION.md
 
 **Purpose:** Direction, ambition, long-term intent
@@ -38,8 +36,6 @@ Describe the desired future state if this product succeeds. This may include qua
 
 Explicitly state what this product is **not** trying to do, even if those things seem adjacent or tempting.
 
----
-
 ## PRODUCT.md
 
 **Purpose:** Problem framing, value, scope
@@ -59,8 +55,6 @@ Explain how the product meaningfully improves the user’s situation. Focus on o
 ### Scope and boundaries
 
 Clarify what is included in the product and what is explicitly out of scope.
-
----
 
 ## DOMAIN.md
 
@@ -87,8 +81,6 @@ Describe rules that must always hold true within the domain, regardless of imple
 
 Provide authoritative definitions for important terms used across all documents.
 
----
-
 ## CONTEXT.md
 
 **Purpose:** Constraints, assumptions, environment
@@ -108,8 +100,6 @@ Describe non-functional constraints such as performance expectations, budgets, t
 ### Assumptions and trade-offs
 
 Explicitly state assumptions being made and the trade-offs they imply.
-
----
 
 ## ARCHITECTURE.md
 
@@ -131,8 +121,6 @@ Describe how data and state are represented, owned, and evolved.
 
 List external systems, APIs, or interfaces the system interacts with.
 
----
-
 ## UX_GUIDELINES.md
 
 **Purpose:** Interaction principles and semantics
@@ -148,8 +136,6 @@ Document standard interaction patterns to be reused across the product.
 ### Accessibility and usability considerations
 
 List accessibility goals and usability constraints.
-
----
 
 ## SPEC.md (or specs/*.md)
 
@@ -171,8 +157,6 @@ List edge cases, invalid inputs, and error conditions.
 
 Define conditions under which the feature is considered correct.
 
----
-
 ## PLAN.md
 
 **Purpose:** Sequencing and delivery intent
@@ -188,8 +172,6 @@ List dependencies between features, teams, or systems.
 ### Risks and mitigations
 
 Identify known risks and how they are being managed.
-
----
 
 ## AGENTS.md
 
@@ -211,8 +193,6 @@ List design and implementation constraints AI agents must respect.
 
 Describe when agents should stop and ask questions.
 
----
-
 ## CONTRIBUTING.md
 
 **Purpose:** Contribution and quality rules
@@ -228,8 +208,6 @@ Explain how changes are reviewed and accepted.
 ### Quality bar
 
 Define expectations for clarity, consistency, and intent.
-
----
 
 ## Notes on Use
 
