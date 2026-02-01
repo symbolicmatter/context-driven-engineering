@@ -12,15 +12,32 @@ CDE is intentionally demanding. It is designed for software craftsmen and teams 
 
 This document defines the discipline and its rules. A separate “CDE Explained” document provides the system-level mental model and rationale behind these rules.
 
----
+## Contents
+
+- [Overview](#overview)
+- [Core Claim](#core-claim)
+- [Rationality vs Reality (Or: How and Why We "Fake It")](#rationality-vs-reality-or-how-and-why-we-fake-it)
+- [Exploration and Commitment](#exploration-and-commitment)
+- [Principles](#principles)
+- [Core Documents](#core-documents)
+- [Living Documents and Ownership](#living-documents-and-ownership)
+- [Active Use of Context](#active-use-of-context)
+- [Design Worldviews](#design-worldviews)
+- [Consistency Gate (Minimum Bar)](#consistency-gate-minimum-bar)
+- [Stop Conditions](#stop-conditions)
+- [Documentation Levels: From Beginner to Expert](#documentation-levels-from-beginner-to-expert)
+- [Getting Started (A Gentle Path)](#getting-started-a-gentle-path)
+- [Documentation Flow (Orientation Diagram)](#documentation-flow-orientation-diagram)
+- [Failure Modes (Known Risks)](#failure-modes-known-risks)
+- [When CDE Is a Poor Fit](#when-cde-is-a-poor-fit)
+- [Summary](#summary)
+- [Related Practices](#related-practices)
 
 ## Core Claim
 
 > If the context is vague, the software is already broken, even if the code runs.
 
 CDE does **not** claim that good context guarantees perfect software. It claims that poor context guarantees fragile software.
-
----
 
 **What “Driven” Means in Context-Driven Engineering**
 
@@ -38,9 +55,7 @@ When downstream reality conflicts with context, the context must be revised expl
 
 This directional relationship is intentional and fundamental to the CDE mental model.
 
----
-
-## Rationality vs Reality (How and Why We “Fake It”)
+## Rationality vs Reality (Or: How and Why We "Fake It")
 
 CDE does **not** assume that software is designed in a perfectly rational, linear process.
 
@@ -50,15 +65,23 @@ In practice:
 - Designs evolve as constraints surface
 - Decisions are often revised with hindsight
 
-CDE adopts the stance that while design is rarely discovered rationally, it is **maintained as if it were**, because doing so:
+CDE adopts a principle articulated by David Parnas: while design is rarely discovered rationally, it should be **documented as if it were**.[^1]
+
+This is not falsification. It is **edited understanding**.
+
+Just as mathematicians publish polished proofs rather than their messy discovery processes, software documentation should present the best current explanation of the system—not a historical transcript of how it was discovered.
+
+Maintaining this "as-if" rationality:
 
 - Makes systems reviewable
 - Makes reasoning explicit
 - Makes maintenance and handover possible
 
-Documentation in CDE therefore represents the **best current explanation** of the system, not a historical transcript of how it was discovered.
+**In the AI era, this is no longer optional.** AI agents cannot navigate archaeological documentation or infer intent from fragmentary context. They require rationalized, coherent documentation even more than human maintainers do.
 
----
+CDE treats rationalized documentation not as overhead, but as **the medium through which both humans and agents reason about the system**.
+
+[^1]: Parnas, D.L. and Clements, P.C. "A Rational Design Process: How and Why to Fake It" (1986)
 
 ## Exploration and Commitment
 
@@ -97,12 +120,10 @@ At these points:
 - Specifications become authoritative
 - Known contradictions are resolved or explicitly documented
 
----
-
 ## Principles
 
 - **Context as the Product**
-Vision, domain meaning, constraints, specifications, architecture, and plans are primary artifacts. Code is secondary.
+  Vision, domain meaning, constraints, specifications, architecture, and plans are primary artifacts. Code is secondary.
 
 - **Single Responsibility of Documents**
   Each document exists for a specific purpose and must not duplicate others.
@@ -119,7 +140,16 @@ Vision, domain meaning, constraints, specifications, architecture, and plans are
 - **Explicit Trade-offs**
   When compromises are made, they are documented rather than hidden in code.
 
----
+## Context, Code, and Engineering Authority
+
+In CDE, code is not the primary source of truth. It is a **projection** of context.
+
+This does not diminish code's importance—code is what users interact with and what delivers value. It clarifies **engineering responsibility**:
+
+- If code behaves incorrectly, the first question is: "Where was the context unclear, contradictory, or incomplete?"
+- Context is the **engineering artifact** we maintain; code is what that artifact produces
+
+Context endures because it represents **shared understanding** that outlasts any particular implementation. Code changes to keep pace with evolving understanding and changing organizational needs.
 
 ## Core Documents
 
@@ -156,8 +186,6 @@ Its purpose is to prevent accidental reordering and premature optimization, espe
 
 Issue trackers, roadmaps, and delivery tooling may exist alongside PLAN.md, but they do not replace it.
 
----
-
 ## Living Documents and Ownership
 
 Each core document in CDE has a clear purpose and an explicit form of ownership.
@@ -166,8 +194,6 @@ It implies responsibility for maintaining coherence as understanding evolves.
 
 For example, terminology and domain meaning are owned by DOMAIN.md.
 This means that changes in understanding of the domain should ultimately be reflected there, even if those insights emerge elsewhere in the process.
-
----
 
 ## Active Use of Context
 
@@ -182,8 +208,6 @@ CDE exists precisely to prevent this by making shared context explicit and evolv
 How teams ensure that context is actively consulted — through practices, tooling, or workflows — is intentionally left outside the scope of CDE.
 
 Active use of context does not only guide decisions; it also exposes gaps, inconsistencies, and misunderstandings in the context itself.
-
----
 
 ### Context Evolution
 
@@ -211,8 +235,6 @@ This learning may affect different documents in different ways:
 CDE does not prescribe how learning should be captured or integrated.
 It does, however, assume that teams take deliberate responsibility
 for making learning explicit and shared, rather than leaving it implicit in code or individual decisions.
-
----
 
 ## Design Worldviews
 
@@ -249,8 +271,6 @@ Other projects using CDE are expected to either:
 
 CDE remains neutral; individual projects are not.
 
----
-
 ## Consistency Gate (Minimum Bar)
 
 Before work is considered complete at a commitment point, the following must hold:
@@ -262,8 +282,6 @@ Before work is considered complete at a commitment point, the following must hol
 
 This gate is intentionally lightweight, but non-optional.
 
----
-
 ## Stop Conditions
 
 In applied CDE settings, work is expected to **pause** if:
@@ -274,8 +292,6 @@ In applied CDE settings, work is expected to **pause** if:
 - Context documents disagree on terminology or intent
 
 In such cases, clarification is required before proceeding.
-
----
 
 ## Documentation Levels: From Beginner to Expert
 
@@ -297,8 +313,6 @@ Goal:
 
 - Make intent, meaning, and constraints explicit enough for another developer or an AI agent to contribute safely.
 
----
-
 ### Intermediate: Behavioral Precision
 
 Focus: reducing ambiguity and rework.
@@ -313,8 +327,6 @@ Adds:
 Goal:
 
 - Define behavioral contracts before or alongside implementation.
-
----
 
 ### Expert: Context Orchestration
 
@@ -331,8 +343,6 @@ Goal:
 - Enable reliable parallel work and agentic workflows.
 - Ensure that evolving domain meaning and contextual assumptions remain coherent across parallel human and AI work.
 
----
-
 ## Getting Started (A Gentle Path)
 
 1. Start with **PRODUCT.md** and **ARCHITECTURE.md**.
@@ -341,8 +351,6 @@ Goal:
 4. Introduce **AGENTS.md** only when AI agents are doing real work.
 
 Adopt rigor gradually, in response to coordination cost.
-
----
 
 ## Documentation Flow (Orientation Diagram)
 
@@ -372,8 +380,6 @@ The dotted lines indicate learning loops: insights gained during implementation 
 
 Real projects will vary in how and when this learning is made explicit.
 
----
-
 ## Failure Modes (Known Risks)
 
 CDE does not eliminate failure. Common failure modes include:
@@ -392,8 +398,6 @@ CDE does not eliminate failure. Common failure modes include:
 
 CDE mitigates these risks through visibility and discipline, not automation.
 
----
-
 ## When CDE Is a Poor Fit
 
 CDE may be unsuitable when:
@@ -405,8 +409,6 @@ CDE may be unsuitable when:
 
 CDE is a craft discipline, not a universal solution.
 
----
-
 ## Summary
 
 CDE treats context as the primary medium of software engineering.
@@ -416,8 +418,6 @@ It accepts that discovery is messy, but insists that understanding be made expli
 It favors clarity over cleverness, responsibility over improvisation, and systems that remain understandable long after their authors have moved on.
 
 Code changes. Context endures.
-
----
 
 ## Related Practices
 
