@@ -7,7 +7,22 @@ This project deliberately adopts a **Smalltalk‑inspired, message‑centric app
 
 This section defines the conceptual frame that both humans and AI coding agents are expected to operate within.
 
----
+## Contents
+
+- [1. Objects as Lived‑In Abstractions](#1-objects-as-livedin-abstractions)
+- [2. Message‑Centric Interaction](#2-messagecentric-interaction)
+- [3. Responsibility‑Driven Design (RDD)](#3-responsibilitydriven-design-rdd)
+- [4. Collaboration Over Control Flow](#4-collaboration-over-control-flow)
+- [5. CRC Cards as a Design Tool](#5-crc-cards-as-a-design-tool)
+- [6. Designing Before Structuring](#6-designing-before-structuring)
+- [7. Guidance for AI Coding Agents](#7-guidance-for-ai-coding-agents)
+- [8. Non‑Goals](#8-nongoals)
+- [9. Object Thinking vs Computer Thinking](#9-object-thinking-vs-computer-thinking)
+- [10. Responsibilities Are Not Functions](#10-responsibilities-are-not-functions)
+- [11. Behavior First, Data Later](#11-behavior-first-data-later)
+- [12. Collaboration Is Intrinsic](#12-collaboration-is-intrinsic)
+- [13. Anthropomorphism as a Design Aid](#13-anthropomorphism-as-a-design-aid)
+- [Summary](#summary)
 
 ## 1. Objects as Lived‑In Abstractions
 
@@ -22,8 +37,6 @@ An object:
 Objects are designed to be _mentally inhabitable_. A developer should be able to ask: _“If I were this object, what would I reasonably do when asked this?”_
 
 This perspective deliberately avoids treating objects as passive records manipulated by external logic.
-
----
 
 ## 2. Message‑Centric Interaction
 
@@ -43,8 +56,6 @@ Message sending is preferred over:
 
 Late binding is a feature, not a risk. The sender should depend only on the _meaning_ of the message, not on the concrete class or structure of the receiver.
 
----
-
 ## 3. Responsibility‑Driven Design (RDD)
 
 Design starts by identifying **responsibilities**, not classes, tables, or APIs.
@@ -61,8 +72,6 @@ Responsibilities should be:
 - Expressed in domain language
 
 If a responsibility feels vague, generic, or technical, it is probably misplaced.
-
----
 
 ## 4. Collaboration Over Control Flow
 
@@ -82,8 +91,6 @@ Avoid:
 
 Control flow should be an _emergent property_ of object interaction, not a predefined script.
 
----
-
 ## 5. CRC Cards as a Design Tool
 
 Class‑Responsibility‑Collaboration (CRC) cards are used as a _thinking aid_, not documentation.
@@ -101,8 +108,6 @@ CRC sessions are conversational and exploratory. They are meant to:
 - Improve object naming and boundaries
 
 CRC artefacts may be discarded once understanding is achieved.
-
----
 
 ## 6. Designing Before Structuring
 
@@ -122,8 +127,6 @@ We first establish:
 
 Code structure should _follow_ object design, not drive it.
 
----
-
 ## 7. Guidance for AI Coding Agents
 
 When acting as a coding agent in this project, you are expected to:
@@ -142,8 +145,6 @@ You should challenge designs that:
 
 If forced to choose between architectural purity and preserving object responsibilities, **preserve responsibilities**.
 
----
-
 ## 8. Non‑Goals
 
 This project does **not** aim to:
@@ -153,8 +154,6 @@ This project does **not** aim to:
 - Model everything upfront
 
 The goal is **conceptual integrity**, not theoretical perfection.
-
----
 
 ## 9. Object Thinking vs Computer Thinking
 
@@ -177,8 +176,6 @@ If it explains _how domain objects fulfill responsibilities_, it is likely sound
 
 When in doubt, redesign toward object thinking.
 
----
-
 ## 10. Responsibilities Are Not Functions
 
 A **responsibility is not a function**.
@@ -194,8 +191,6 @@ Guidelines:
 
 If a responsibility sounds like a getter, setter, or calculation detail, it is probably misplaced.
 
----
-
 ## 11. Behavior First, Data Later
 
 Objects are discovered and defined by **behavior first**.
@@ -210,8 +205,6 @@ Only after responsibilities are clear do we decide:
 
 Attribute‑first design leads directly to anemic objects and procedural coordination.
 
----
-
 ## 12. Collaboration Is Intrinsic
 
 Collaboration is not accidental wiring. It is part of an object’s intrinsic nature.
@@ -221,8 +214,6 @@ If an object consistently needs another object to fulfill a responsibility, that
 Excessive indirection, service locators, or orchestration layers are signals that responsibilities may be misplaced.
 
 Coupling is acceptable when it reflects domain necessity.
-
----
 
 ## 13. Anthropomorphism as a Design Aid
 
@@ -235,8 +226,6 @@ Ask questions like:
 - What does it need to know to fulfill its obligations?
 
 Anthropomorphism is a cognitive tool to preserve autonomy, accountability, and integrity.
-
----
 
 ## Summary
 
