@@ -5,7 +5,9 @@
 Context-Driven Engineering (CDE) is an approach to software development that treats
 **context as the primary artifact** and code as a secondary, derived outcome.
 
-![Conceptual authority flow in Context-Driven Engineering](assets/cde-authority-flow.jpg)
+<img src="assets/cde-authority-flow.jpg"
+     alt="Conceptual authority flow in Context-Driven Engineering"
+     width="650">
 
 In CDE, vision, specifications, architecture, and design constraints are made explicit,
 kept coherent, and used directly by both humans and AI coding agents.
