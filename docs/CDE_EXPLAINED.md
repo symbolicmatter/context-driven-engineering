@@ -1,6 +1,6 @@
 # Context-Driven Engineering (CDE) Explained
 
-This document elaborates on the mental model behind Context-Driven Engineering. Read **[CDE.md](../CDE.md)** first for the concise definition.
+This document elaborates on the mental model behind Context-Driven Engineering. Read **[CDE.md](./CDE.md)** first for the concise definition.
 
 ## Why Context-Driven Engineering Exists
 
