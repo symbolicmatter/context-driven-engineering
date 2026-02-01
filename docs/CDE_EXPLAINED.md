@@ -2,6 +2,20 @@
 
 This document elaborates on the mental model behind Context-Driven Engineering. Read **[CDE.md](./CDE.md)** first for the concise definition.
 
+## Contents
+
+- [Why Context-Driven Engineering Exists](#why-context-driven-engineering-exists)
+- [What "Context" Means in CDE](#what-context-means-in-cde)
+- [The CDE System at a Glance](#the-cde-system-at-a-glance)
+- [Authority Flow and Feedback Loops](#authority-flow-and-feedback-loops)
+- [Code as Downstream Projection](#code-as-downstream-projection)
+- [Commitment Points and the Consistency Gate](#commitment-points-and-the-consistency-gate)
+- [The Role of the Design Worldview](#the-role-of-the-design-worldview)
+- [Humans and AI Agents as Symmetric Actors](#humans-and-ai-agents-as-symmetric-actors)
+- [What CDE Is Not](#what-cde-is-not)
+- [When CDE Works Best](#when-cde-works-best)
+- [In Summary](#in-summary)
+
 ## Why Context-Driven Engineering Exists
 
 Most software engineering problems are not caused by bad code.
