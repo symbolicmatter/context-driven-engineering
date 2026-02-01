@@ -1,7 +1,5 @@
 # Context-Driven Engineering (CDE)
 
-## Overview
-
 **Context-Driven Engineering (CDE)** is a disciplined, AI-aware approach to software engineering that treats *context* (vision, specification, architecture, planning, and rules of engagement) as the primary engineering artifact.
 
 In CDE, code is not the source of truth. It is a *projection* of context, produced by humans or AI agents acting within clearly defined constraints.
@@ -14,7 +12,6 @@ This document defines the discipline and its rules. A separate â€œCDE Explainedâ
 
 ## Contents
 
-- [Overview](#overview)
 - [Core Claim](#core-claim)
 - [Rationality vs Reality (Or: How and Why We "Fake It")](#rationality-vs-reality-or-how-and-why-we-fake-it)
 - [Exploration and Commitment](#exploration-and-commitment)
