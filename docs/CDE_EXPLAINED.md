@@ -19,8 +19,6 @@ Context-Driven Engineering (CDE) starts from a simple observation:
 
 CDE treats context not as supporting information, but as the **primary engineering medium** from which code is derived.
 
----
-
 ## What “Context” Means in CDE
 
 In CDE, *context* is the collection of authoritative artifacts that explain:
@@ -41,8 +39,6 @@ rather than as a prescribed checklist of artifacts.
 
 Anything that materially influences design decisions but is not written down
 cannot be inspected, challenged, or evolved, and therefore represents a design risk.
-
----
 
 ## The CDE System at a Glance
 
@@ -139,8 +135,6 @@ Not every project will exercise every relationship equally; the diagram shows th
 
 The sections below walk through these relationships in more detail.
 
----
-
 ## Authority Flow and Feedback Loops
 
 CDE models software development as a system with two complementary flows.
@@ -160,7 +154,23 @@ In CDE, downstream artifacts are not treated as overriding upstream authority wi
 
 Authority in this sense is conceptual, not hierarchical. It defines which decisions constrain others, not who is allowed to make them.
 
----
+**Why "Authority"?**
+
+The word "authority" is chosen deliberately, despite its hierarchical connotations.
+
+CDE describes a **hierarchy of logical dependency**, not organizational power:
+
+- Specifications cannot contradict architecture without architecture changing
+- Code cannot violate specifications without specifications being revised
+- Implementation details cannot override design intent without that intent being reconsidered
+
+This is authority in the sense that a **mathematical proof has authority over its corollaries**: downstream conclusions depend on upstream premises. If the conclusion is wrong, either the reasoning failed or the premise must be revised.
+
+A junior developer can challenge architecture if it contradicts domain understanding—but the challenge must resolve at the architectural level, not be silently ignored in code.
+
+Without this directional authority, systems drift: code becomes the de facto specification, implementation accidents become constraints, and nobody can explain why anything works the way it does.
+
+CDE makes authority explicit so it can be **challenged, revised, and maintained**—not to prevent change, but to ensure change propagates correctly through the system.
 
 ### Feedback Flow (Bottom-Up)
 
@@ -180,8 +190,6 @@ This learning flows *upward*:
 
 CDE does not deny exploration. It structures how learning is captured.
 
----
-
 ## Code as Downstream Projection
 
 In CDE, code is not the primary source of truth.
@@ -194,8 +202,6 @@ This does not diminish the importance of code. It clarifies responsibility:
 - The first question is “where was the context unclear, contradictory, or incomplete?”
 
 This shift moves teams away from blame and toward systemic improvement.
-
----
 
 ## Commitment Points and the Consistency Gate
 
@@ -218,8 +224,6 @@ If inconsistencies are found, work pauses until the context is reconciled.
 
 This gate is a safety valve, not a bureaucracy.
 
----
-
 ## The Role of the Design Worldview
 
 CDE is intentionally worldview-agnostic.
@@ -233,8 +237,6 @@ The worldview:
 - Applies equally to humans and AI agents
 
 Violations of the declared worldview trigger a stop condition.
-
----
 
 ## Humans and AI Agents as Symmetric Actors
 
@@ -253,8 +255,6 @@ AI agents are treated as junior contributors:
 
 This symmetry forces precision and reduces hidden assumptions.
 
----
-
 ## What CDE Is Not
 
 CDE is not:
@@ -266,8 +266,6 @@ CDE is not:
 
 It is a discipline for teams and individuals who are willing to trade improvisation for clarity when the cost of misalignment is high.
 
----
-
 ## When CDE Works Best
 
 CDE shines when:
@@ -278,8 +276,6 @@ CDE shines when:
 - Knowledge transfer is expected
 
 It is intentionally overkill for throwaway prototypes.
-
----
 
 ## In Summary
 
