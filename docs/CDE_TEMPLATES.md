@@ -16,6 +16,20 @@ They demonstrate one coherent way of externalizing context in written form.
 Projects applying CDE are expected to adapt, omit, or restructure these documents
 based on their needs and constraints.
 
+## Contents
+
+- [VISION.md](#visionmd)
+- [PRODUCT.md](#productmd)
+- [DOMAIN.md](#domainmd)
+- [CONTEXT.md](#contextmd)
+- [ARCHITECTURE.md](#architecturemd)
+- [UX_GUIDELINES.md](#ux_guidelinesmd)
+- [SPEC.md (or specs/*.md)](#specmd-or-specsmd)
+- [PLAN.md](#planmd)
+- [AGENTS.md](#agentsmd)
+- [CONTRIBUTING.md](#contributingmd)
+- [Notes on Use](#notes-on-use)
+
 ## VISION.md
 
 **Purpose:** Direction, ambition, long-term intent
