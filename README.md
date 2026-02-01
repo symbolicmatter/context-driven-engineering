@@ -1,18 +1,18 @@
 # Context-Driven Engineering
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+![Living Document](https://img.shields.io/badge/Status-Living%20Document-blue?style=for-the-badge) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange?style=for-the-badge)](./LICENSE)
 
-Context-Driven Engineering (CDE) is an approach to software development that treats
-**context as the primary artifact** and code as a secondary, derived outcome.
+Context-Driven Engineering (CDE) is an approach to software development that treats **context as the primary artifact** and code as a secondary, derived outcome.
+
+In CDE, vision, specifications, architecture, and design constraints are made explicit, kept coherent, and used directly by both humans and AI coding agents.
+
+This repository serves as a **conceptual reference and school of thought** for Context-Driven Engineering (CDE).
+
+<br>
 
 <img src="assets/cde-authority-flow.jpg"
      alt="Conceptual authority flow in Context-Driven Engineering"
      width="650">
-
-In CDE, vision, specifications, architecture, and design constraints are made explicit,
-kept coherent, and used directly by both humans and AI coding agents.
-
-This repository serves as a **conceptual reference and school of thought** for Context-Driven Engineering (CDE).
 
 ---
 
@@ -33,7 +33,15 @@ When engaging with CDE in exploratory or pilot contexts (for example within an e
 The goal is not methodological purity, but learning how explicit, coherent context
 changes the quality and reliability of AI-assisted development in real projects.
 
----
+## Contents
+
+- [Why Context-Driven Engineering?](#why-context-driven-engineering)
+- [Isn’t this just a lot of upfront specification?](#isnt-this-just-a-lot-of-upfront-specification)
+- [What This Repository Contains](#what-this-repository-contains)
+- [Who This Is For](#who-this-is-for)
+- [Status](#status)
+- [License](#license)
+- [Stewardship](#stewardship)
 
 ## Why Context-Driven Engineering?
 
@@ -56,8 +64,6 @@ Without explicit, coherent context, AI accelerates design drift rather than prev
 Faster code generation amplifies ambiguity, inconsistency, and misplaced responsibility.
 
 CDE exists to make intent durable in a world where code is cheap.
-
----
 
 ## *Isn’t this just a lot of upfront specification?*
 
@@ -91,25 +97,21 @@ CDE shifts effort from *explaining after the fact* to *deciding with intent* —
 
 CDE does not ask you to specify everything upfront — it asks you to stop paying the cost of implicit decisions later.
 
----
-
 ## What This Repository Contains
 
-- **[CDE.md](./docs/CDE.md)**  
+- **[docs/CDE.md](./docs/CDE.md)**  
   A concise description of Context-Driven Engineering as a practice.
 
-- **[CDE_EXPLAINED.md](./docs/CDE_EXPLAINED.md)**  
+- **[docs/CDE_EXPLAINED.md](./docs/CDE_EXPLAINED.md)**  
   A deeper explanation of the mental model behind CDE.
 
-- **[DESIGN_WORLDVIEW.md](./docs/DESIGN_WORLDVIEW.md)**  
+- **[docs/DESIGN_WORLDVIEW.md](./docs/DESIGN_WORLDVIEW.md)**  
   An example of an explicit design worldview (Object-Centric Design).
   CDE itself is worldview-agnostic.
 
 - **example-domain/**  
   A placeholder for worked examples applying CDE in practice.  
   Currently contains template-based documents only. *(Work in progress.)*
-
----
 
 ## Who This Is For
 
@@ -122,8 +124,6 @@ This repository is intended for:
 
 If you are primarily looking for a framework, this is probably not for you.
 
----
-
 ## Status
 
 This is a living body of work.
@@ -132,8 +132,6 @@ The ideas here are opinionated, incomplete, and evolving.
 That is intentional.
 
 This repository has been used as background material in exploratory discussions within organizations.
-
----
 
 ## License
 
@@ -154,8 +152,6 @@ Under the following terms:
 This license applies to **all conceptual content, documentation, and written material** in this repository unless explicitly stated otherwise.
 
 For the full legal text, see the [`LICENSE`](./LICENSE) file.
-
----
 
 ## Stewardship
 
