@@ -1,13 +1,3 @@
----
-subject: CDE
-description: High-level introduction and positioning of Context-Driven Engineering
-role: core
-priority: high
-status: active
-name: CDE README
-path_name: CDE/README.md
-last_modified: 2026-01-27
----
 # Context-Driven Engineering
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

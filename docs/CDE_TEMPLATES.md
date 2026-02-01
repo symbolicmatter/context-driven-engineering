@@ -1,13 +1,3 @@
----
-subject: CDE
-description: Reusable document templates for applying Context-Driven Engineering
-role: supporting
-priority: low
-status: active
-name: CDE Templates
-path_name: CDE/docs/CDE_TEMPLATES.md
-last_modified: 2026-01-27
----
 # Example Templates for Context-Driven Engineering (CDE)
 
 This document provides **example templates** for documents commonly used in Context-Driven Engineering (CDE).

@@ -1,13 +1,3 @@
----
-subject: CDE
-description: Contribution workflow and collaboration rules
-role: supporting
-priority: medium
-status: active
-name: CDE Contributing Guide
-path_name: CDE/CONTRIBUTING.md
-last_modified: 2026-01-27
----
 # Contributing to Context-Driven Engineering (CDE)
 
 Thank you for your interest in contributing.
