@@ -101,9 +101,6 @@ CDE does not ask you to specify everything upfront — it asks you to stop payin
   An example of an explicit design worldview (Object-Centric Design).
   CDE itself is worldview-agnostic.
 
-- **[AGENTS.md](./docs/AGENTS.md)**  
-  An operating manual for AI coding agents working in a CDE environment.
-
 - **example-domain/**  
   A placeholder for worked examples applying CDE in practice.  
   Currently contains template-based documents only. *(Work in progress.)*
