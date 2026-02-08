@@ -35,9 +35,12 @@ changes the quality and reliability of AI-assisted development in real projects.
 
 ## Contents
 
+- [How to read this (especially for first-time readers)](#how-to-read-this-especially-for-first-time-readers)
+- [Contents](#contents)
 - [Why Context-Driven Engineering?](#why-context-driven-engineering)
 - [Isn’t this just a lot of upfront specification?](#isnt-this-just-a-lot-of-upfront-specification)
 - [What This Repository Contains](#what-this-repository-contains)
+- [From Concept to Practice](#from-concept-to-practice)
 - [Who This Is For](#who-this-is-for)
 - [Status](#status)
 - [License](#license)
