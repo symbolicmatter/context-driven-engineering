@@ -11,8 +11,6 @@ coherence, and conceptual rigor of the work.
 By contributing, you agree that your contributions are licensed under CC
 BY-NC-SA 4.0.
 
----
-
 ## What This Repository Is
 
 Contributions should strengthen CDE as a conceptual framework,
@@ -31,8 +29,6 @@ It is **not** intended to:
 - Accumulate unrelated patterns
 - Track trends in tools or technologies
 
----
-
 ## Types of Contributions Welcome
 
 We welcome contributions that:
@@ -49,8 +45,6 @@ We are especially interested in contributions that improve:
 - Internal consistency
 - Practical applicability
 
----
-
 ## Design Worldviews
 
 CDE itself is worldview-agnostic.
@@ -66,8 +60,6 @@ When contributing to documents or examples that explicitly adopt a worldview:
 
 If you disagree with a worldview, raise it explicitly in discussion.
 
----
-
 ## How to Contribute
 
 1. Open an issue describing:
@@ -78,8 +70,6 @@ If you disagree with a worldview, raise it explicitly in discussion.
 4. Explain assumptions when introducing new material
 
 Large conceptual changes typically start as discussion.
-
----
 
 ## What We Will Push Back On
 
@@ -94,8 +84,6 @@ This is intentional.
 
 Conceptual integrity matters more than consensus.
 
----
-
 ## AI-Generated Contributions
 
 AI-assisted contributions are allowed.
@@ -108,8 +96,6 @@ However:
 
 AI is a tool, not an author.
 
----
-
 ## Tone and Conduct
 
 Be precise.
@@ -118,8 +104,6 @@ Assume intelligence and good intent.
 
 Strong opinions are welcome.
 Personal attacks are not.
-
----
 
 ## Final Note
 
