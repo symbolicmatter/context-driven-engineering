@@ -113,6 +113,20 @@ CDE does not ask you to specify everything upfront — it asks you to stop payin
   A placeholder for worked examples applying CDE in practice.  
   Currently contains template-based documents only. *(Work in progress.)*
 
+## From Concept to Practice
+
+This repository describes Context-Driven Engineering (CDE) as a **conceptual framework**, not as a complete operational workflow.
+
+For readers interested in how CDE ideas can be applied concretely in day-to-day AI-assisted development, see:
+
+- **Context-Driven Development Workflow (CDDW)**  
+  <https://github.com/symbolicmatter/context-driven-development-workflow>
+
+CDDW is an opinionated, practical workflow that operationalizes CDE principles by treating learning as a first-class artifact and enforcing explicit consolidation over time.
+
+You can engage with CDE without adopting CDDW.
+CDDW represents one possible interpretation, not a requirement.
+
 ## Who This Is For
 
 This repository is intended for:
